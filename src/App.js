@@ -53,7 +53,7 @@ export default function App() {
 
       {/* question footer ----------------------- */}
       <div className="question-footer">
-        <button onClick={handleNextQuestion}>Go to next question 👉</button>
+        <button onClick={handleNextQuestion}>Go to next question <span>👉</span></button>
       </div>
     </div>
   );
