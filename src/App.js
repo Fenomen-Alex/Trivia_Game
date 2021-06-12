@@ -4,7 +4,7 @@ import CategorySelector from './components/CategorySelector';
 import ResultModal from './components/ResultModal';
 import Scoreboard from './components/Scoreboard';
 import './App.css';
-import useTrivia from "./useTrivia";
+import useTrivia from './useTrivia';
 
 export default function App() {
   const { question, getQuestion, category, setCategory } = useTrivia();
@@ -36,7 +36,7 @@ export default function App() {
       <div className="question-header">
         <CategorySelector
           category={category}
-          chooseCategory={setCategory()}
+          chooseCategory={setCategory}
         />
         <Scoreboard isCorrect={isCorrect} />
       </div>
@@ -53,7 +53,7 @@ export default function App() {
 
       {/* question footer ----------------------- */}
       <div className="question-footer">
-        <button onClick={handleNextQuestion}>Go to next question <span>👉</span></button>
+        <button onClick={handleNextQuestion}>Go to next question <span role="img" aria-label="emoji">👉</span></button>
       </div>
     </div>
   );

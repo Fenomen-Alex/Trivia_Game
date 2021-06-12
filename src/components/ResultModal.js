@@ -7,7 +7,7 @@ export default function ResultModal({isCorrect, getQuestion, question}) {
       <div className="result-modal-content">
         {isCorrect && (
           <h3>
-            <span>👊👊👊</span>
+            <span role="img" aria-label="emoji">👊👊👊</span>
             <br/>
             YOU WON!
           </h3>
@@ -15,7 +15,7 @@ export default function ResultModal({isCorrect, getQuestion, question}) {
 
         {!isCorrect && (
           <h3>
-            <span>😟😢😟</span>
+            <span role="img" aria-label="emoji">😟😢😟</span>
             <br/>
             YOU LOST!
           </h3>
@@ -29,7 +29,7 @@ export default function ResultModal({isCorrect, getQuestion, question}) {
           </div>
         )}
 
-        <button onClick={getQuestion}>Go to next question <span>👉</span></button>
+        <button onClick={getQuestion}>Go to next question <span role="img" aria-label="emoji">👉</span></button>
       </div>
     </div>
   );

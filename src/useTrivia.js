@@ -17,7 +17,7 @@ const useTrivia = () => {
     getQuestion();
   }, [getQuestion, category]);
 
-  return { question, category, setCategory, setQuestion };
+  return { question, category, setCategory, getQuestion };
 };
 
 export default useTrivia;
